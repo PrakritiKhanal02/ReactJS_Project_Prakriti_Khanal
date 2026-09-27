@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+#banner {
+    height: 50vh;
+    border-radius: 40px;
+    margin: 20px auto;
+    width: 90%;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(198, 93, 37, 0.18);
+}
+
+#banner .carousel-item {
+    height: 55vh;
+}
+
+#banner .carousel-item img {
+    height: 100%;
+    
+    opacity: 0.9;
+     
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #fff6e9;
+    color: #4a2a18;
+}
+
+.navbar {
+    background-color: #fff6e9;
+    border-bottom: 2px solid #e8c99f;
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+    color: #c65d25;
+    transition: color 0.2s;
+}
+
+.navbar-brand:hover {
+    color: #a94718;
+}
+
+.navbar-brand img {
+    max-height: 65px;
+    width: auto;
+}
+
+.nav-link {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0 8px;
+    color: #7b401f;
+    transition: color 0.2s;
+    letter-spacing: 0.2px;
+}
+
+.nav-link:hover {
+    color: #c65d25;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+h1 {
+    color: #b95320;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+h2,
+h3 {
+    color: #8b451f;
+    font-weight: 700;
+}
+
+input[type="text"],
+input[type="search"] {
+    border: 1px solid #dfbd91;
+    border-radius: 8px;
+}
+
+input[type="text"]:focus,
+input[type="search"]:focus {
+    border-color: #c65d25;
+    box-shadow: 0 0 0 0.2rem rgba(198, 93, 37, 0.15);
+}
+
+.btn-primary {
+    background-color: #c65d25;
+    border-color: #c65d25;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #a94718;
+    border-color: #a94718;
+}
+
+.btn-outline-primary {
+    color: #c65d25;
+    border-color: #c65d25;
+}
+
+.btn-outline-primary:hover {
+    background-color: #c65d25;
+    border-color: #c65d25;
+    color: white;
+}
+
+.btn {
+    border-radius: 8px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-sm {
+    border-radius: 7px;
+}
+
+.recipe-card {
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(120, 70, 30, 0.12);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.recipe-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(150, 75, 25, 0.25);
+}
+
+.recipe-card img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.recipe-card .card-body {
+    padding: 20px;
+}
+
+.recipe-card .card-title {
+    color: #8b451f;
+    font-weight: bold;
+}
+
+.recipe-card .card-text {
+    color: #76533e;
+}
+
+.recipe-card .btn {
+    border-radius: 20px;
+}
+
+.recipe-details {
+    background-color: white;
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(120, 70, 30, 0.12);
+}
+
+.recipe-details h1 {
+    color: #b95320;
+}
+
+.recipe-details h3 {
+    color: #c65d25;
+}
+
+.recipe-details li {
+    margin-bottom: 8px;
+}
+
+.instructions {
+    background-color: white;
+    line-height: 1.8;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.instructions p {
+    margin: 0;
+}
+
+.recipe-image {
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.recipe-image img {
+    width: 100%;
+    display: block;
+    border-radius: 18px;
+}
+
+.favorite-button {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    color: #c65d25;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, color 0.2s;
+}
+
+.favorite-button:hover {
+    transform: scale(1.1);
+    color: #a94718;
+}
+
+.favorite-button.saved {
+    background-color: #e1a83e;
+    color: white;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+footer h5,
+footer h6,
+footer p {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 24px;
+    }
+
+    .nav-link {
+        margin: 5px 0;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .recipe-card img {
+        height: 200px;
+    }
+}
